@@ -4,7 +4,7 @@ var score;
 var trialsLeft;
 var step;
 var action; //used for setInterval
-var fruits = ['apple', 'banana', 'cherries', 'grapes', 'mango', 'orange', 'peach', 'pear', 'watermelon'];
+var fruits = ['apple', 'banana', 'cherries', 'grapes', 'mango', 'orange', 'peach', 'pear', 'lemon'];
 $(function() {
 
     //click on start reset button
@@ -57,7 +57,7 @@ $(function() {
         $("#fruit1").hide("explode", 500); //slice fruit
 
         //send new fruit
-        setTimeout(startAction, 900);
+        setTimeout(startAction, 700);
     });
 
     //functions
@@ -122,7 +122,7 @@ $(function() {
     // generate a random fruit
 
     function chooseFruit() {
-        $("#fruit1").attr('src', 'images/' + fruits[Math.round(8 * Math.random())] + '.png');
+        $("#fruit1").attr('src', 'images/' + fruits[Math.round(8 * Math.random())] + '1.png');
     }
 
     //Stop dropping fruits
