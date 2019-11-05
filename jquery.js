@@ -54,7 +54,7 @@ $(function() {
         clearInterval(action);
 
         //hide fruit
-        $("#fruit1").hide("explode", 500); //slice fruit
+        $("#fruit1").hide("explode", 700); //slice fruit
 
         //send new fruit
         setTimeout(startAction, 700);

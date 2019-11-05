@@ -14,6 +14,7 @@ html {
     background-image: url("images/bgtry3.png");
     /* background-color: #372421; */
     font-family: 'Press Start 2P', cursive;
+    /* pointer-events: none; */
 }
 
 #container {
@@ -64,10 +65,7 @@ html {
     width: 650px;
     height: 400px;
     margin: 50px auto 10px auto;
-    background-image: url("images/innerbg1.jpg");
-    box-shadow: 0px 4px #535aa8;
-    -moz-box-shadow: 0px 4px #535aa8;
-    -webkit-box-shadow: 0px 4px #535aa8;
+    background-image: url("images/innerbg1.png");
     font-size: 100px;
     text-align: center;
     color: black;
@@ -209,4 +207,130 @@ html {
     position: absolute;
 }
 
-y
+.helpContent {
+    height: 550px;
+    width: 750px;
+    /* background-color: #281a1a; */
+    border: 30px solid #281a1a;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px auto;
+    padding: 20px;
+    color: #f6f6f6;
+    line-height: 50px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    text-align: center;
+    ;
+}
+
+.output {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    h5 {
+        font-size: 20px;
+    }
+}
+
+
+/* Cursor Styling */
+
+.cursor::after {
+    content: '';
+    display: inline-block;
+    margin-left: 3px;
+    background-color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+h1.cursor::after {
+    height: 24px;
+    width: 13px;
+}
+
+p.cursor::after {
+    height: 13px;
+    width: 6px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.helpToGame {
+    height: 50px;
+    width: 500px;
+    background-color: #281a1a;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    /* padding: 16px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+/* .helpToGame {
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+} */
+
+.helpToGame:hover {
+    background-color: #F3706C;
+    color: white;
+}
+
+.bottomleft {
+    height: 20px;
+    width: 200px;
+    ;
+    /* float: left; */
+    background-color: #281a1a;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    /* margin: 4px 2px; */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+/* .helpToGame {
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+} */
+
+.bottomleft:hover {
+    background-color: #F3706C;
+    color: white;
+}
